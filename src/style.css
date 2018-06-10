@@ -1,0 +1,47 @@
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+button {
+  background-color: transparent;
+  border: 2px solid #000;
+}
+
+#getinfo {
+  margin-top: 60px;
+  margin: 0;
+  width: 100%;
+}
+
+#username {
+  font-family: inherit;
+  border: 1px solid #e0e0e0;
+}
+
+#playground {
+  margin-top: 40px;
+}
+
+.loading {
+  display: none;
+  color: #f86565;
+}
+
+.show {
+  display: block;
+}
+
+/* .chart-container {
+  position: relative; 
+  height:40vh; 
+  width:80vw;
+  margin: 0 auto;
+} */
+
+#code-chart {
+  width: 600px;
+  height:400px;
+  margin: 0 auto;
+}
