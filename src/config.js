@@ -17,16 +17,17 @@ export default function(username, data) {
       formatter: '{a} <br/>{b} : {c} ({d}%)'
     },
     legend: {
-      orient: 'vertical',
-      left: 'left',
+      // orient: 'vertical',
+      left: 'center',
+      bottom: 0,
       data: languages
     },
     series: [
       {
         name: '访问来源',
         type: 'pie',
-        radius: '55%',
-        center: ['50%', '60%'],
+        radius: '60%',
+        center: ['50%', '50%'],
         data: seriesData,
         itemStyle: {
           emphasis: {

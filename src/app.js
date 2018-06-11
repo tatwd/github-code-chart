@@ -2,11 +2,12 @@ import fetchData from './fetchData';
 import configer from './config';
 import './style.css';
 
+const usernameInput = document.querySelector('#username');
 const submitBtn = document.querySelector('#submit');
 const loading = document.querySelector('.loading');
 
-const onSubmit = function() {
-  const username = document.querySelector('#username').value;
+function init() {
+  const username = usernameInput.value;
 
   if (!username || username == '') {
     alert('Please input your GitHub user name');
@@ -30,6 +31,15 @@ const onSubmit = function() {
     var codeChart = echarts.init(ctx);
     codeChart.setOption(option);
   });
-};
+}
 
+function onEnter(ev) {
+  if (ev.keyCode == 13) init();
+}
+
+function onSubmit() {
+  init();
+}
+
+usernameInput.addEventListener('keypress', onEnter);
 submitBtn.addEventListener('click', onSubmit);

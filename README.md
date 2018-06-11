@@ -1,3 +1,3 @@
 # github-code-chart
 
-A github code counter using ECharts
+A github code analysis using  [ECharts](https://github.com/apache/incubator-echarts).
