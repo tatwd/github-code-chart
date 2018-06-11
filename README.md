@@ -1,3 +1,3 @@
-# github-code-chart
+# github-code-analyse
 
-A github code analysis using  [ECharts](https://github.com/apache/incubator-echarts).
+A github code analyse using  [ECharts](https://github.com/apache/incubator-echarts).
