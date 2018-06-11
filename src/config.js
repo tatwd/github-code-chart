@@ -16,17 +16,17 @@ export default function(username, data) {
       trigger: 'item',
       formatter: '{a} <br/>{b} : {c} ({d}%)'
     },
-    legend: {
-      // orient: 'vertical',
-      left: 'center',
-      bottom: 0,
-      data: languages
-    },
+    // legend: {
+    //   // orient: 'vertical',
+    //   left: 'center',
+    //   bottom: 0,
+    //   data: languages
+    // },
     series: [
       {
-        name: '访问来源',
+        name: 'GitHub',
         type: 'pie',
-        radius: '60%',
+        radius: '55%',
         center: ['50%', '50%'],
         data: seriesData,
         itemStyle: {
