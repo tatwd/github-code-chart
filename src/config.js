@@ -8,9 +8,9 @@ export default function(username, data) {
 
   return {
     title: {
-      text: 'GitHub 公共仓库代码语言分布图',
-      subtext: `@${username}`,
-      x: 'center'
+      // text: 'GitHub 公共仓库代码语言分布图',
+      // subtext: `@${username}`,
+      // x: 'center'
     },
     tooltip: {
       trigger: 'item',

@@ -15,9 +15,16 @@ button {
   width: 100%;
 }
 
-#username {
+#username, #username:focus {
   font-family: inherit;
   border: 1px solid #e0e0e0;
+  line-height: 1.5;
+  outline: 0;
+  -ms-progress-appearance: unset;
+             -webkit-appearance: none;
+                -moz-appearance: none;
+                     appearance: none;
+
 }
 
 #playground {

@@ -1,5 +1,11 @@
+import echarts from 'echarts/lib/echarts';
+
+import('echarts/lib/chart/pie');
+import('echarts/lib/component/tooltip');
+import('echarts/lib/component/title');
+
 import fetchData from './fetchData';
-import configer from './config';
+import configen from './config';
 import './style.css';
 
 const usernameInput = document.querySelector('#username');
@@ -27,7 +33,7 @@ function init() {
 
     var ctx = document.getElementById('code-chart');
     echarts.dispose(ctx);
-    var option = configer(username, data);
+    var option = configen(username, data);
     var codeChart = echarts.init(ctx);
     codeChart.setOption(option);
   });
